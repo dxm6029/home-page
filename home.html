@@ -5,16 +5,35 @@
     <meta charset="utf-8" />
     <title>Dominique Molee Homepage</title>
     <link rel="stylesheet" href="index.css">
+    
+    <script>
+        //allows for the navigation to expand / close 
+        function menuHider() {
+            var x = document.getElementById("myNav");
+            if (x.className === "topNav") {
+                x.className = x.className + "Responsive";
+            } else {
+                x.className = "topNav";
+            }
+        }
+
+    </script>
 </head>
 
 <body>
-    <header>
-
-    </header>
+    <nav id="myNav" class="topNav">
+        <a class="current" href="#">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="#">RESUME</a>
+        <a href="#">PORTFOLIO</a>
+        <a href="javascript:void(0);" class="icon" onclick="menuHider()">&#9776;</a>
+    </nav>
     <div id="cols">
         <div id="col1">
             <h1>Dominique</h1>
             <h1>Molee</h1>
+            <h2>Full-Stack</h2>
+            <h2>Software Engineer</h2>
         </div>
         <div id="col2">
             <img src="assets/images/dominique_molee.JPG" alt="Dominique Molee" title="Dominique Molee" id="Dominique" />
